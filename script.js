@@ -4,7 +4,7 @@ var minutesEl = document.getElementById('minutes')
 var secondsEl = document.getElementById('seconds')
 
 function countdownTimer() {
-    const countDownDate = new Date('2024-11-15T20:00').getTime(08)
+    const countDownDate = new Date('2024-11-15T20:00').getTime()
     const second = 1000
     const minute = second * 60
     const hour = minute * 60
