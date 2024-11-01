@@ -60,3 +60,25 @@ li.separator {
 li:first-of-type {
     margin-right: 5rem;
 }
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 0.8rem;
+    }
+
+    li span {
+        font-size: 3rem;
+    }
+
+    li.separator {
+        font-size: 3rem;
+    }
+
+    li:first-of-type {
+        margin-right: 2rem;
+    }
+}
