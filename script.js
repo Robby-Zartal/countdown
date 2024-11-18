@@ -29,6 +29,15 @@ function countdownTimer() {
     const now = new Date().getTime()
     const distance = countDownDate - now
 
+    if (distance <= 0) {
+        daysEl.innerText = "00";
+        hoursEl.innerText = "00";
+        minutesEl.innerText = "00";
+        secondsEl.innerText = "00";
+        clearInterval(interval);
+        return;
+    }
+
     daysEl.innerText = formatNumber(Math.floor(distance / day))
     hoursEl.innerText = formatNumber(Math.floor((distance % day) / hour))
     minutesEl.innerText = formatNumber(Math.floor((distance % hour) / minute))
