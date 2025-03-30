@@ -5,7 +5,7 @@ var secondsEl = document.getElementById('seconds')
 var countdownDateEl = document.getElementById('countDownDate')
 
 function countdownTimer() {
-    const countDownDate = new Date('2024-11-15T19:50').getTime()
+    const countDownDate = new Date('2025-11-15T19:50').getTime()
 
     const formattedDate = new Date(countDownDate).toLocaleString('en-GB', {
         weekday: 'long',
